@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <title>Lift Bootstrap Messages</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+  </head>
+  <body class="lift:content_id=main">
+    <div id="main" data-lift="surround?with=default;at=content" class="container">
+
+      <form data-lift="ltFormSample" method="post">
+
+          <div class="row">
+            <div class="col-md-3">&nbsp;</div>
+            <div class="col-md-6" data-lift="ltMsgsSnippet?id=login">
+        <div class="alert alert-success"><span class="msg">Success sample message</span><button type="button" class="close"
+  data-dismiss="alert">x</button></div>
+        <div class="alert alert-info"><span class="msg">Info sample message</span><button type="button" class="close"
+  data-dismiss="alert">x</button></div>
+        <div class="alert alert-warning"><span class="msg">Warning sample message</span><button type="button" class="close"
+  data-dismiss="alert">x</button></div>
+        <div class="alert alert-danger"><span class="msg">Danger sample message</span><button type="button" class="close"
+  data-dismiss="alert">x</button></div>
+            </div>
+            <div class="col-md-3">&nbsp;</div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3">&nbsp;</div>
+            <div class="col-md-6">
+          <label for="login_user">
+            User or email
+          </label>
+          <input id="login_email" name="login_email" class="form-control" placeholder="username or email" autofocus="autofocus" tabindex="1" type="text"/>
+
+          <label for="login_password">
+            Password <a href="index">(forgot password)</a>
+          </label>
+          <input id="login_password" name="login_password" class="form-control" placeholder="password" tabindex="2" type="password">
+            </div>
+            <div class="col-md-3">&nbsp;</div>
+          </div>
+
+          <div class="row text-center">
+            <div class="col-md-4">&nbsp;</div>
+            <div class="col-md-4">&nbsp;</div>
+            <div class="col-md-4">&nbsp;</div>
+          </div>
+
+          <div class="row text-center">
+            <div class="col-md-3">&nbsp;</div>
+              <div class="col-md-6">
+                <button class="btn btn-primary" type="submit" tabindex="3">Login &nbsp;&nbsp;<span class="icon-play"></span></button>
+              </div>
+            <div class="col-md-3">&nbsp;</div>
+          </div>
+
+      </form>
+
+    </div><!-- /lift:surroung -->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.js"></script>
+    <![endif]-->
+  </body>
+</html>

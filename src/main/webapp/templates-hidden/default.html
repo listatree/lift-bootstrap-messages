@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title data-lift="Menu.title"></title>
+
+    <!-- Icons -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <img alt="loading" id="ajax-loader" style="display:none; margin-bottom: 0px; margin-left: 5px" src="/images/ajax-loader.gif"/>
+
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="tk-btn-collapse navbar-collapse collapse icon-collapse icon-2x"></span>
+            <span class="tk-btn-collapse navbar-collapse collapse icon-collapse-top icon-2x"></span>
+            <span class="tk-btn-collapse-padding"></span>
+          </button>
+          <a class="navbar-brand" href="index">
+            <h1>Lift Bootstrap Messages</h1>
+          </a>
+        </div>
+        <div class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li><a href="index">Home</a></li>
+          </ul>
+          <form action="index" class="navbar-form navbar-right">
+            <button type="submit" class="btn btn-primary">Sample</button>
+          </form>
+        </div>
+      </div>
+    </nav>  
+
+    <div class="container">
+      <div data-lift="LtMsgsSnippet?id=global">
+        <div class="alert alert-success"><span class="msg"></span><button type="button" class="close"
+  data-dismiss="alert">x</button></div>
+        <div class="alert alert-info"><span class="msg"></span><button type="button" class="close"
+  data-dismiss="alert">x</button></div>
+        <div class="alert alert-warning"><span class="msg"></span><button type="button" class="close"
+  data-dismiss="alert">x</button></div>
+        <div class="alert alert-danger"><span class="msg"></span><button type="button" class="close"
+  data-dismiss="alert">x</button></div>
+      </div>
+    </div>
+    
+    <div id="content">The main content will get bound here</div>    
+  
+    <div class="container">
+      <hr>
+      <footer>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <a href="http://www.listatree.com/">Listatree</a>
+          </div>
+        </div>
+      </footer>
+    </div><!-- /.container -->  
+
+    <script src="js/jquery.js"></script>
+    <script data-lift="ltShivSnippet"></script>
+    <script src="js/liftAjax.js"></script>
+    <script id="json" src="/classpath/json.js"></script>
+    <script src="js/bootstrap.js"></script>
+  
+  </body>
+</html>
